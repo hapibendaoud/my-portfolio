@@ -32,7 +32,7 @@ export default function Navbar() {
         <nav className="w-full h-fit flex items-center justify-center pt-3 fixed z-50 ">
             <div className="md:max-w-3xl h-fit flex items-center justify-center md:gap-10 gap-4 rounded-4xl  px-2.5 py-2 border border-gray-200 dark:border-none bg-white dark:bg-black">
                 <div className="rounded-4xl overflow-hidden hover:brightness-50 cursor-pointer">
-                    <Image src={"/said.jpeg"} alt="saidDev" width={40} height={40}></Image>
+                    <Image src={"./said.jpeg"} alt="saidDev" width={40} height={40}></Image>
                 </div>
                 
                 <div className="md:flex flex-wrap items-center justify-center gap-5 text-sm dark:text-white text-gray-600 hidden md:visible">

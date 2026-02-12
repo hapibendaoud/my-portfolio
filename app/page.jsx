@@ -14,7 +14,7 @@ export default function Home() {
           </div>
           
             <div className="h-full w-full flex items-center justify-center max-lg:pt-20 max-lg:px-3 relative">
-              <Image src={"/MAINSAID.PNG"} alt="said" width={500} height={500} 
+              <Image src={"./MAINSAID.PNG"} alt="said" width={500} height={500} 
               className="lg:w-[85%] lg:h-[90%] max-lg:h-[90%] rounded-2xl"
               ></Image>
             <div className="w-30 h-30 absolute bottom-0 left-0 bggreen rounded-[50%] 
