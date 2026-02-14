@@ -44,7 +44,19 @@ export default function Navbar() {
                 <div className="flex flex-wrap items-center justify-center text-white md:hidden visible">
                     <span>Available for work </span>
                 </div>
-                <Link href={"#"} className="md:flex md:visible hidden px-8 py-2 rounded-4xl text-sm dark:bg-white bg-[#303030] dark:text-black text-white hover:bg-[#5E67E6] dark:hover:bg-[#D0FF71]">Contact</Link>
+                <Link href={"#"} className="group relative flex items-center justify-center overflow-hidden rounded-full px-6 bg-white  py-2 transition-all">
+                <span
+                    className="absolute bottom-0 left-0 h-40 w-full origin-bottom
+                    translate-y-full transform overflow-hidden
+                    rounded-full bg-[#D0FF71]
+                    transition-all duration-300 ease-out
+                    group-hover:translate-y-14 z-10"
+                ></span>
+
+                <span className="relative z-20 text-black">
+                    Contuct
+                </span>
+                </Link>
                 <Link href={"#"} className="flex md:hidden visible px-4.5 py-2 rounded-4xl bg-white dark:text-black text-white text-2xl ">=</Link>
             </div>
         </nav>

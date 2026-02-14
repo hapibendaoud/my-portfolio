@@ -7,12 +7,13 @@ import {
   AccordionContent,
 } from '@/components/motion-primitives/accordion';
 import { ChevronUp } from 'lucide-react';
+import WorkButton from "@/components/motion-primitives/workbutton";
 
 
 export default function Home() {
   return (
-      <main >
-        <div className="h-screen max-lg:h-fit grid lg:grid-cols-3 grid-cols-1 pt-20 dark:bg-[#303030]">
+      <main className="bg-white dark:bg-[#303030]">
+        <div className="h-screen max-lg:h-fit grid lg:grid-cols-3 grid-cols-1 pt-20 ">
           <div className="toleft h-full w-full flex flex-col lg:items-end max-sm:items-center justify-center max-lg:pt-30 max-lg:pl-20">
             <h3 className="font-bebas text-4xl lg:text-lg sm:text-sm tracking-[-0.03em] 
             scale-y-210 font-extrabold lg:pb-3 pb-5 text-[#303030] dark:text-white"
@@ -153,6 +154,7 @@ export default function Home() {
                 <Link href="https://www.facebook.com/said.ait.bendaoud.2025" target="_blink"><Image src="/facebook.png" alt="facebook" width={32} height={32} className=""/></Link>
                 <Link href="https://github.com/HapiBendaoud" target="_blink"><Image src="/github.png" alt="github" width={32} height={32} className=""/></Link>
               </div>
+              <WorkButton link={"/store"} text={"MY STORE"}/>
             </div>
             <div className="flex flex-col w-full lg:w-[50%] ">
 
