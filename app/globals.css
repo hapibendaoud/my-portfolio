@@ -2,8 +2,8 @@
 
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #303030;
+  --foreground: #ffffff;
   --navcolor: #1A1A1B;
   --yellow: #ffd700;
 }
@@ -30,3 +30,57 @@ body {
 .font-bebas {
   font-family: var(--font-bebas);
 }
+
+
+.scene {
+  perspective: 1000px;
+}
+
+.image {
+  transform-origin: center ; /* الحافة السفلى تبقى على الطاولة */
+  transform: rotateX(-90deg); /* تبدأ مسطحة */
+  animation: liftImage 2s ease forwards;
+}
+
+@keyframes liftImage {
+  from {
+    transform: rotateX(-90deg); /* مسطحة */
+      scale: 0;
+      opacity:0;  
+  }
+  to {
+    transform: rotateX(0deg); /* واقفة */
+    scale: 1;
+    opacity:1;
+  }
+}
+
+.toleft{
+  opacity:0;
+  animation: textleft 1s ease forwards;
+  animation-delay: 2s;
+}
+@keyframes textleft {
+  0%{
+    translate: 50% 0%;
+    opacity:0;
+  } to {
+    translate: 0% 0%;
+    opacity: 1;
+  }
+}
+.toright{
+  opacity:0;
+  animation: textright 1s ease forwards;
+  animation-delay: 2s;
+}
+@keyframes textright {
+  from{
+    translate: -50% 0%;
+    opacity:0;
+  } to {
+    translate: 0% 0%;
+    opacity: 1;
+  }
+}
+
